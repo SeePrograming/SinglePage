@@ -1,0 +1,140 @@
+
+body {
+  font-family: 'Acme', sans-serif;
+}
+
+/* .Main {
+   background: url(image/1.png) ;
+  height: 100px;
+  width: 100px;
+  height: 570px;
+} */
+
+.Main {
+width:100%;
+height:750px;
+}
+
+.Main1 {
+
+  height: 750px;
+}
+
+.Main2 {
+
+  height: 750px;
+
+}
+
+.Main3 {
+
+  height: 750px;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 15px;
+
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+#one{
+  color: yellow;
+}
+
+#one:hover{
+  color: #000;
+}
+
+
+#navb{
+  margin-left:5px;
+  font-size:50px;
+  color:yellow;
+}
+
+#navb:hover{
+  color: #000;
+}
+
+#p1{
+   padding-top: 300px;
+   color: yellow;
+   text-align: center;
+
+   font-size: 50px;
+}
+
+p{
+  color: #fff;
+}
+
+
+.fly-in-text {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.fly-in-text li {
+    display: inline-block;
+    margin-right: 8px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 200;
+    font-size: 130px;
+    color:yellow;
+    /* text-shadow: 0 0 20px yellow; */
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+.fly-in-text li:last-child {
+    margin-right: 0;
+}
+.fly-in-text.hidden li {
+    opacity: 0;
+}
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-1000px) translateY(-2000px); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(2000px) translateY(1000px); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-1500px) translateY(-800px); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(1000px) translateY(-1700px); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(-1400px) translateY(-1500px); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(1800px) translateY(-1600px); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(1000px) translateY(-600px); }
+.fly-in-text.hidden li:nth-child(8) { transform: translateX(900px) translateY(-1900px); }
+.fly-in-text.hidden li:nth-child(9) { transform: translateX(-900px) translateY(1000px); }
+
+
+
+.face {
+  
+  margin: 0 auto;
+  width: 300px;
+}
+
+.face:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
